@@ -5,7 +5,7 @@
 
 .grid(@columns, @i: 1) when (@i <= @columns) {
     .col-@{i} {
-        width: percentage(@i / @columns);
+        width: percentage((@i / @columns), rem);
         padding-left: 1rem;
         padding-right: 1rem;
         flex: 1;
